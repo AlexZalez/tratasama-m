@@ -7,7 +7,10 @@ export default {
 
   theme: {
     fontFamily:{
-      'alma':['Almarai',  'serif']
+      'alma':['Almarai',  'serif'],
+      'lex':['Lexend Mega',  'serif'],
+      'ave':['Average',  'serif'],
+      'gus':['Gustavo',  'serif'],
     },
     extend: {},
   },

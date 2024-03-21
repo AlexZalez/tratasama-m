@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Average';
+        src: url('assets/fonts/Average-Custom-1.ttf');
+    }
+
+    @font-face {
+        font-family: 'Gustavo';
+        src: url('assets/fonts/gustavo-medium-webfont.woff2') format('woff2');
+    }
+}
