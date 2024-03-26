@@ -7,12 +7,18 @@ export default {
 
   theme: {
     fontFamily:{
-      'alma':['Almarai',  'serif'],
-      'lex':['Lexend Mega',  'serif'],
-      'ave':['Average',  'serif'],
-      'gus':['Gustavo',  'serif'],
+      'mon':['Montserrat',  'serif'],
+      'synb':['Syncopate-Bold',  'serif'],
+      'synr':['Syncopate-Regular',  'serif'],
     },
-    extend: {},
+    extend: {
+      colors:{
+        primary: '#2BB4BA',
+        secondary: '#233251',
+        tr_light: '#727073',
+        tr_dark: '#4D4D4D',
+      }
+    },
   },
   plugins: [],
 }

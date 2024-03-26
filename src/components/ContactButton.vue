@@ -2,14 +2,37 @@
 defineProps({
     Bclass:{
         type:String
-    }
+    },
+    color1:{
+        type:String,
+        default:'black'
+    },
+    color2:{
+        type:String,
+        default:'white'
+    },
 })
+
+function selColor(color) {
+    const colors = {
+        'white':'#FFFFFF',
+        'black':'#000000',
+        'primary':'#2BB4BA',
+        'secondary':'#233251',
+        'tr_light':'#727073',
+        'tr_dark':'#4D4D4D',
+    }
+
+    const DEFAULT_COLOR = '#FF0000'
+
+    return colors[color] || DEFAULT_COLOR;
+}
 
 
 </script>
 
 <template>
-    <button class="btn tracking-wider"> 
+    <button :class="'btn tracking-wider px-10 py-2 '+Bclass"> 
         <slot/>
     </button>
 </template>
@@ -17,20 +40,20 @@ defineProps({
 
 <style >
     .btn {
-        --color: #000000;
-        --color2: #FFFFFF;
-        padding: 0.8em 1.75em;
-        background-color: transparent;
-        border-radius: 6px;
+        --color: v-bind(selColor(color1));
+        --color2: v-bind(selColor(color2));
+        /* padding: 0.5em 1.75em; */
+        /* background-color: transparent; */
+        border-radius: 50px;
         border: .3px solid var(--color);
         transition: .5s;
         position: relative;
         overflow: hidden;
         cursor: pointer;
         z-index: 1;
-        font-weight: 300;
-        font-size: 17px;
-        font-family: 'Gustavo', 'Segoe UI', sans-serif;
+        font-weight: 800;
+        /* font-size: 17px; */
+        font-family: 'Montserrat', 'Segoe UI', sans-serif;
         text-transform: uppercase;
         color: var(--color);
     }
