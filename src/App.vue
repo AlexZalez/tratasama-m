@@ -2,7 +2,7 @@
   import tr_logo1 from './assets/logo/Logo_300_B.png';
   import tr_logo2 from './assets/logo/Logo_400.png';
   import tr_logo2B from './assets/logo/Logo_400_B.png';
-  import tr_logo3 from './assets/logo/Logo_R_100.png';
+  import tr_logo3 from './assets/logo/Logo_100_B.png';
   import section1 from './assets/section_1/image-section-1.jpg';
   import serv1 from './assets/section_2/serv-1.jpg';
   import serv2 from './assets/section_2/serv-2.jpg';
@@ -23,9 +23,9 @@
   import 'swiper/css';
 
   const servicios = [
-    {name: 'TRANSPORTE DE PERSONAL', img: serv3},
-    {name:'TAXI EJECUTIVO', img:serv1},
-   {name:'MECANICA PESADA Y EXPECIALIZADA', img:serv2}]
+    {name: 'TRANSPORTE PRIVADO', img: serv3},
+    {name:'REPUESTOS', img:serv1},
+   {name:'TALLER DE MECANICA PESADA', img:serv2}]
   
   
   
@@ -173,75 +173,34 @@
 
       </section>
 
-      
-      <section class="section-2" >
-        <div class="container mx-auto py-44 ">
-          <div>
-            <h2 class="font-mon text-4xl font-bold before:content-['-'] before:text-white text-secondary">Servicios</h2>
-            <h3 class="mt-10 font-synb font-semibold text-7xl relative  z-10 text-white">
-              <div class="absolute bottom-0  -left-16 -z-10 text-[8rem] font-extrabold  text-white/10 ">IDEALES EN</div>
-                IDEALES EN
-            </h3>
-          </div>
-           
-          <div class="flex flex-wrap justify-center gap-x-6 text-secondary mt-24">
-            
-            <div v-for="servicio in servicios" 
-              class="w-80 h-[28rem] mt-16 bg-white rounded-3xl overflow-hidden"
-            >
-              <div class="aspect-square w-full bg-secondary">
-                <img :src="servicio.img" alt="">
-              </div>
-              <h3 class=" font-bold font-mon pt-2 pl-2 h-16 ">{{servicio.name}}</h3>
-              <div class="flex justify-center pt-6">
-                <button class="font-mon font-semibold flex">
-                  Conoce mas
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6" viewBox="0 0 24 24" fill="none">
-                    <g id="Arrow / Arrow_Right_SM">
-                      <path id="Vector" d="M7 12H17M17 12L13 8M17 12L13 16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                  </svg>
-                </button>
-              </div>
-              
-              
-            </div>
-            
-           </div>
-        </div>
+      <section class="bg-white container mx-auto">
+        <div class="flex flex-wrap py-24 space-x-24">
         
-      </section>
-
-      <section class="flex bg-white container mx-auto">
-        <div class="flex flex-wrap py-44 space-x-24">
-        
-          <div class="flex flex-nowrap items-center w-[35rem] h-[42rem] bg-primary rounded-3xl">
-            <div class="flex h-[95%] ">
+          <div class=" w-[35rem] h-[42rem] bg-primary rounded-3xl">
+            <div class="pt-8 px-6">
               <img :src="tr_logo3" alt="tratasama_logo_3">
-              
-              
             </div>
-            <div class="flex flex-col w-full">
-              <div class="translate-x-28 text-[30rem] leading-none font-mon font-bold text-right  text-white ">10</div>
-              <div class="w-full text-right pr-8 text-8xl font-mon font-bold text-white">AÑOS</div>
+
+            <div class="">
+              <div class=" text-[28rem] text-center leading-none font-mon font-bold   text-white ">10</div>
+              <div class="text-center text-8xl font-mon font-bold text-white">AÑOS</div>
             </div>
           </div>
 
           <div class="flex-1 space-y-8" >
             
             <div class="">
-              <h2 class="font-mon text-4xl font-bold before:content-['-'] before:text-primary text-tr_light">Nosotros</h2>
-              <h3 class="mt-10 font-synb font-semibold text-7xl relative  z-10 text-primary">
-                <div class="absolute bottom-0  -left-16 -z-10 text-[7rem]  font-extrabold  text-primary/10 ">QUE ES</div>
-                  <div class="flex justify-between flex-wrap">
-                    <div>QUE ES</div>
-                  </div>                   
-              </h3>
+              <h2 class="mt-3 font-mon text-4xl font-bold text-secondary">
+                <span class="bg-primary/30 rounded-2xl  p-3">
+                  Nosotros
+                </span>
+              </h2>
+              
             </div>
 
             <div class="">
               <div class="w-96 "><img :src="tr_logo2B" alt=""></div>
-              <p class="py-16 max-w-lg text-tr-light font-mon">
+              <p class="py-16 max-w-lg text-tr-light font-mon font-semibold">
                 Estamos en el ramo del Transporte de Personal y Servicio de Taxi Ejecutivo a Nivel Nacional,
                 con un Plus en Mecánica Especializada y Mecánica Pesada, con el firme propósito de otorgar a
                 nuestros clientes las mejores alternativas en calidad y servicio.
@@ -264,13 +223,12 @@
       <section class=" bg-white ">
         <div class="flex w-full justify-center container mx-auto">
           <div class="">
-            <h2 class="font-mon text-4xl font-bold before:content-['-'] before:text-primary text-tr_light">Clientes</h2>
-            <h3 class="mt-10 font-synb font-semibold text-7xl relative  z-10 text-primary">
-              <div class="absolute bottom-0  -left-1/4 -z-10 text-[7rem]  font-extrabold  text-primary/10 text-nowrap">RUTAS CON</div>
-                <div class="flex justify-between flex-wrap">
-                  <div>RUTAS CON</div>
-                </div>                   
-            </h3>
+            <h2 class="font-mon text-4xl font-bold  text-secondary">
+              <span class="bg-primary/30 p-3  rounded-2xl">
+                Clientes
+              </span>
+            </h2>
+            
           </div>
         </div>
 
@@ -293,6 +251,95 @@
         </div>
       </section>
 
+      
+      <section class="section-2" >
+        <div class="container mx-auto py-24 ">
+          <div class="mb-16">
+            <h2 class="font-mon text-4xl font-bold  before:text-white text-secondary ">
+              <span class="bg-white/30 p-3 rounded-2xl">
+                Servicios
+              </span>
+            </h2>
+            
+          </div>
+
+          <div class="space-y-44">
+            <div class="flex p-6 shadow-2xl shadow-secondary bg-gradient-to-tr from-white/20 to-secondary/30 rounded-xl">
+              <div class="flex flex-[30%] rounded-xl overflow-hidden">
+                <img :src="servicios[1].img" alt="" class="w-full aspect-square " >
+  
+              </div>
+              
+              <div class="p-3 flex flex-[50%] flex-col ">
+                <div class="">
+                  <h3 class="text-center font-mon font-bold text-4xl text-white">
+                    <span class="p-3 ">TRANSPORTE PRIVADO</span>
+                  </h3>
+                </div>
+
+                <div class="h-full flex mt-16 justify-center items-center gap-6 font-mon font-bold">
+
+                  <div class="service-card">
+                    <div class="w-fit">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-16 fill-white" viewBox="0 0 15 15" version="1.1" id="fuel">
+                        <path d="M13,6L13,6v5.5c0,0.2761-0.2239,0.5-0.5,0.5S12,11.7761,12,11.5v-2C12,8.6716,11.3284,8,10.5,8H9V2c0-0.5523-0.4477-1-1-1H2&#10;&#9;C1.4477,1,1,1.4477,1,2v11c0,0.5523,0.4477,1,1,1h6c0.5523,0,1-0.4477,1-1V9h1.5C10.7761,9,11,9.2239,11,9.5v2&#10;&#9;c0,0.8284,0.6716,1.5,1.5,1.5s1.5-0.6716,1.5-1.5V5c0-0.5523-0.4477-1-1-1l0,0V2.49C12.9946,2.2178,12.7723,1.9999,12.5,2&#10;&#9;c-0.2816,0.0047-0.5062,0.2367-0.5015,0.5184C11.9987,2.5289,11.9992,2.5395,12,2.55V5C12,5.5523,12.4477,6,13,6s1-0.4477,1-1&#10;&#9;s-0.4477-1-1-1 M8,6.5C8,6.7761,7.7761,7,7.5,7h-5C2.2239,7,2,6.7761,2,6.5v-3C2,3.2239,2.2239,3,2.5,3h5C7.7761,3,8,3.2239,8,3.5&#10;&#9;V6.5z"/>
+                      </svg>
+                    </div>
+                    Contamos con nuestro propio almacenamiento de gasoil
+                  </div>
+
+                  <div class="service-card">
+                    <div class="w-fit mx-auto">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-16 fill-white" viewBox="0 0 512 512"><path d="M77.34 58.23C-10.59 97.68 25.84 165.2 35.37 226.7l82.33 6.6 25.6 29.9 68.2-2.7c-26.2 76.7 6.8 128.3 25.6 185.9 54.7 22.6 92.1-11.5 131.3-39.3l-57.7-83.9 71.9 26.7c29.3-12.5 65.7-15.3 81.8-46.3l-16.9-61.1 44.7-58.9c-31.1-41-75.6-62.7-122.6-80.7l-183.8 2.2c.5-25.81-16.2-50.17-69.5-30.05-25.19 9.48-36.81 11.6-41.65 9.68 10.91 20.87 26.55 53.17 14.71 69.97-6.68 9.6-22.56 10.2-34.91-3.8-16.74-18.9 6.74-51.78 17.28-71.11.17-5.59 5.22-14.38 5.61-21.56z"/></svg>
+                    </div>
+                    Realizamos viajes a nivel nacional
+                  </div>
+
+                  <div class="service-card">
+                    <div class="w-fit mx-auto">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-16 stroke-white " viewBox="0 0 24 24" fill="none">
+                        <path d="M5 6V15.8C5 16.9201 5 17.4802 5.21799 17.908C5.40973 18.2843 5.71569 18.5903 6.09202 18.782C6.51984 19 7.07989 19 8.2 19H15.8C16.9201 19 17.4802 19 17.908 18.782C18.2843 18.5903 18.5903 18.2843 18.782 17.908C19 17.4802 19 16.9201 19 15.8V6M5 6C5 6 5 3 12 3C19 3 19 6 19 6M5 6H19M5 13H19M17 21V19M7 21V19M8 16H8.01M16 16H16.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    Mantenemos unidades en BackOffice para solventar cualquier imprevisto
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="flex bg-white">
+              <div class="p-3 flex-1">
+                <h3 class="font-synb font-semibold text-4xl">REPUESTOS</h3>
+              </div>
+              
+              <div class="relative rounded-2xl overflow-hidden 
+                after:content-[''] after:w-full after:h-full after:bg-primary/40 after:left-0 after:top-0 after:absolute after:z-50">
+                <img :src="servicios[0].img" alt="" class="w-[32rem] aspect-square " >
+              </div>
+            </div>
+  
+            <div class="flex bg-white ">
+              <div class="relative rounded-2xl overflow-hidden 
+                after:content-[''] after:w-full after:h-full after:bg-primary/40 after:left-0 after:top-0 after:absolute after:z-50">
+                <img :src="servicios[2].img" alt="" class="w-[32rem] aspect-square " >
+  
+              </div>
+              
+              <div class="p-3">
+                <h3 class="font-synb font-semibold text-4xl">TALLER MECANICO</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+        
+      </section>
+
+      
+
+     
+
       <section class="py-8 bg-secondary">
         <div class="container mx-auto ">
           
@@ -304,13 +351,12 @@
             <div class="flex-[40%] space-y-8 " >
               
               <div class="">
-                <h2 class="font-mon text-4xl font-bold before:content-['-'] before:text-primary text-white">Contáctanos</h2>
-                <h3 class="mt-10 font-synb font-semibold text-4xl relative  z-10 text-primary">
-                  <div class="absolute bottom-1/2  -left-56 -z-10 text-[5rem] tracking-tighter font-extrabold  text-primary/10 ">COLABOREMOS</div>
-                    <div class="flex justify-between flex-wrap">
-                      <div>COLABOREMOS</div>
-                    </div>                   
-                </h3>
+                <h2 class="font-mon text-4xl font-bold  before:text-primary text-white">
+                  <span class="p-3 rounded-2xl bg-primary/40">
+                    Contáctanos
+                  </span>
+                </h2>
+
               </div>
 
               <div class="">
@@ -553,10 +599,9 @@
             </div>
             <div class="flex-col space-y-8 pt-8 font-mon">
               <div class="text-primary font-bold font-synb">CONTACTO</div> 
-              <div class="">SERVICIOS</div> 
-              <div class="">VEHICULOS</div>
-              <div class="">NOSOTROS</div>
-              <div class="">CONTACTANOS</div>
+              <div class="">+58 424 473 50 63</div> 
+              <div class="">tratasama@gmail.com</div>
+              <div class="text-wrap w-56 leading-5">Calle Don Simón, Parcela 14, Jardines de Cagua, Cagua Estado Aragua</div>
             </div>
             <div></div>
           </div>
@@ -582,7 +627,11 @@
   }
 
   .section-2{
-    @apply flex relative overflow-hidden bg-primary
+    @apply  bg-primary
+  }
+
+  .service-card{
+    @apply h-28 w-80 bg-gradient-to-tr from-secondary/60 from-30%  to-white/30 rounded-2xl p-3 text-white flex items-center
   }
 
   .section-3{
